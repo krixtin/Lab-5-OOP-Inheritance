@@ -30,11 +30,6 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
             Console.WriteLine($"{Name} säger: \"Hej hej!\"");
         }
 
-        public override void Eat()
-        {
-            base.Eat();
-        }
-
         public override void Move()
         {
             Console.WriteLine($"{Name} går på en promenad.");
