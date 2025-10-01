@@ -10,7 +10,7 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
     {
         public bool IsLongHaired { get; set; }
 
-        public Cat(string name, int age, int numOfLegs, bool isTame, string habitat, int numOfNipples, bool isLongHaired) : base(name, age, numOfLegs, isTame, habitat, numOfNipples)
+        public Cat(string species, string name, int age, int numOfLegs, bool isTame, string habitat, int numOfNipples, bool isLongHaired) : base(species, name, age, numOfLegs, isTame, habitat, numOfNipples)
         {
             Name = name;
             Age = age;

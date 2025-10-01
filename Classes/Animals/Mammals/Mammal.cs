@@ -11,8 +11,9 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
     {
         public int NumOfNipples { get; set; }
 
-        public Mammal(string name, int age, int numOfLegs, bool isTame, string habitat, int numOfNipples) : base(name, age, numOfLegs, isTame, habitat)
+        public Mammal(string species, string name, int age, int numOfLegs, bool isTame, string habitat, int numOfNipples) : base(species, name, age, numOfLegs, isTame, habitat)
         {
+            Species = species;
             Name = name;
             Age = age;
             NumOfLegs = numOfLegs;

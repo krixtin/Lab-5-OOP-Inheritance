@@ -10,7 +10,7 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
     {
         public int HeightInCm {  get; set; }
 
-        public Human(string name, int age, int numOfLegs, bool isTame, string habitat, int numOfNipples, int heightInCm) : base(name, age, numOfLegs, isTame, habitat, numOfNipples)
+        public Human(string species, string name, int age, int numOfLegs, bool isTame, string habitat, int numOfNipples, int heightInCm) : base(species, name, age, numOfLegs, isTame, habitat, numOfNipples)
         {
             Name = name;
             Age = age;
