@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab_5_OOP_Inheritance.Classes.Animals.Reptiles
 {
-    internal class Reptile : Animal
+    internal class Reptile //: Animal
     {
     }
 }
