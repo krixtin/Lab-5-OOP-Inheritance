@@ -53,6 +53,10 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
             {
                 Console.WriteLine($"Det ballar ur! {Name} har fått {numOfKids}-lingar!");
             }
+            else
+            {
+                Console.WriteLine("Människor kan inte få så många barn, tror jag.");
+            }
 
         }
 
