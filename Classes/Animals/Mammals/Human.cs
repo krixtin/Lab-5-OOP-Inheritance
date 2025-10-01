@@ -23,11 +23,11 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
 
         public override void Introduce()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{Name} är en {Species} som är {Age} år gammal och {HeightInCm} cm lång.");            
         }
         public override void MakeSound()
         {
-            
+            Console.WriteLine($"{Name} säger: \"Hej hej!\"");
         }
 
         public override void Eat()
@@ -37,17 +37,33 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
 
         public override void Move()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{Name} går på en promenad.");
         }
 
         public override void HaveKids(int numOfKids)
         {
-            throw new NotImplementedException();
+            if (numOfKids == 1)
+            {
+                Console.WriteLine($"{Name} har fått ett barn!");
+            }
+            else if (numOfKids == 2)
+            {
+                Console.WriteLine($"{Name} har fått tvillingar!");
+            }
+            else if (numOfKids == 3)
+            {
+                Console.WriteLine($"Jösses! {Name} har fått trillingar!");
+            }
+            else if (numOfKids > 3 && numOfKids < 9)
+            {
+                Console.WriteLine($"Det ballar ur! {Name} har fått {numOfKids}-lingar!");
+            }
+
         }
 
         public void Cook()
         {
-
+            Console.WriteLine($"{Name} lagar mat, för {Name} är en människa och människor kan göra sånt.");
         }
 
 
