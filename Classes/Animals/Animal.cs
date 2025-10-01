@@ -23,6 +23,7 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals
             Habitat = habitat;
         }
 
+        public abstract void Introduce();
         public abstract void MakeSound();
 
         public abstract void Move();
