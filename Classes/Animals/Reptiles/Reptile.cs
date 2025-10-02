@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Lab_5_OOP_Inheritance.Classes.Animals.Reptiles
 {
-    internal class Reptile //: Animal
+    internal abstract class Reptile : Animal
     {
+        public Reptile(string name, int age) : base(name, age)
+        {
+            Name = name;
+            Age = age;
+        }
+
+        public virtual void LayEgg()
+        {
+            Console.WriteLine($"{Name} lägger ägg.");
+        }
+
     }
 }
