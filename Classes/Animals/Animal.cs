@@ -8,21 +8,17 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals
 {
     internal abstract class Animal
     {
-        public string Species { get; set; }
+        public string Species { get; set; } = "obestämd art";
         public string Name { get; set; }
         public int Age { get; set; }
         public int NumOfLegs { get; set; }
         public bool IsTame { get; set; }
-        public string Habitat { get; set; }
+        public string Habitat { get; set; } = "i det vilda";
 
-        public Animal(string species, string name, int age, int numOfLegs, bool isTame, string habitat)
+        public Animal(string name, int age)
         {
-            Species = species;
             Name = name;
             Age = age;
-            NumOfLegs = numOfLegs;
-            IsTame = isTame;
-            Habitat = habitat;
         }
 
         public virtual void Introduce()

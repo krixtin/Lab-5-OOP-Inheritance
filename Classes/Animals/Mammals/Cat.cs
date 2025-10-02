@@ -9,17 +9,20 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
     internal class Cat : Mammal
     {
         public bool IsLongHaired { get; set; }
+        public string Species { get; set; } = "katt";
+        public int NumOfLegs { get; set; } = 4;
+        public bool IsTame { get; set; } = true;
+        public string Habitat { get; set; } = "i ett hus";
+        public int NumOfNipples { get; set; } = 8;
+        
 
-        public Cat(string species, string name, int age, int numOfLegs, bool isTame, string habitat, int numOfNipples, bool isLongHaired) : base(species, name, age, numOfLegs, isTame, habitat, numOfNipples)
+        public Cat(string name, int age, bool isLongHaired) : base(name, age)
         {
             Name = name;
             Age = age;
-            NumOfLegs = numOfLegs;
-            IsTame = isTame;
-            Habitat = habitat;
-            NumOfNipples = numOfNipples;
             IsLongHaired = isLongHaired;
         }
+
 
         public override void MakeSound()
         {

@@ -8,22 +8,23 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
 {
     internal class Human : Mammal
     {
-        public int HeightInCm {  get; set; }
+        public int HeightInCm { get; set; } = 170; //default value is 170
+        public string Species { get; set; } = "människa";
+        public int NumOfLegs { get; set; } = 2;
+        public bool IsTame { get; set; } = false;
+        public string Habitat { get; set; } = "i ett hus";
+        public int NumOfNipples { get; set; } = 2;
 
-        public Human(string species, string name, int age, int numOfLegs, bool isTame, string habitat, int numOfNipples, int heightInCm) : base(species, name, age, numOfLegs, isTame, habitat, numOfNipples)
+        public Human(string name, int age, int heightInCm) : base(name, age)
         {
             Name = name;
             Age = age;
-            NumOfLegs = numOfLegs;
-            IsTame = isTame;
-            Habitat = habitat;
-            NumOfNipples = numOfNipples;
             HeightInCm = heightInCm;
         }
 
         public override void Introduce()
         {
-            Console.WriteLine($"{Name} är en {Species} som är {Age} år gammal och {HeightInCm} cm lång.");            
+            Console.WriteLine($"{Name} är en {Species} som är {Age} år gammal och {HeightInCm} cm lång. {Name} bor {Habitat} och har {NumOfLegs} ben.");            
         }
         public override void MakeSound()
         {
