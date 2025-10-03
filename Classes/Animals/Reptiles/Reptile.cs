@@ -10,8 +10,6 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Reptiles
     {
         public Reptile(string name, int age) : base(name, age)
         {
-            Name = name;
-            Age = age;
         }
 
         public virtual void LayEgg()

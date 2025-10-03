@@ -13,8 +13,6 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
 
         public Mammal(string name, int age) : base(name, age)
         {
-            Name = name;
-            Age = age;
         }
 
         public abstract void HaveKids(int numOfKids);

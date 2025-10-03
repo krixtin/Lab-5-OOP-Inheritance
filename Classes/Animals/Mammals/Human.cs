@@ -8,17 +8,15 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
 {
     internal class Human : Mammal
     {
-        public int HeightInCm { get; set; } = 170; //default value is 170
-        public string Species { get; set; } = "människa";
-        public int NumOfLegs { get; set; } = 2;
-        public bool IsTame { get; set; } = false;
-        public string Habitat { get; set; } = "i ett hus";
-        public int NumOfNipples { get; set; } = 2;
+        public int HeightInCm { get; set; } = 170;
 
         public Human(string name, int age, int heightInCm) : base(name, age)
         {
-            Name = name;
-            Age = age;
+            Species = "människa";
+            NumOfLegs = 2;
+            IsTame = false;
+            Habitat = "i ett hus";
+            NumOfNipples = 2;
             HeightInCm = heightInCm;
         }
 
@@ -64,6 +62,11 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
         public void Cook()
         {
             Console.WriteLine($"{Name} lagar mat, för {Name} är en människa och människor kan göra sånt.");
+        }
+
+        public void Categorise()
+        {
+            Console.WriteLine($"Människor älskar att kategorisera saker! På gott och ont...");
         }
 
 

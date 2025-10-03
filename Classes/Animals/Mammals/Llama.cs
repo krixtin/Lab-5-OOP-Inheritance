@@ -9,16 +9,14 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
     internal class Llama : Mammal
     {
         public bool IsWearingHat { get; set; }
-        public string Species { get; set; } = "lama";
-        public int NumOfLegs { get; set; } = 4;
-        public bool IsTame { get; set; } = true;
-        public string Habitat { get; set; } = "i en hage";
-        public int NumOfNipples { get; set; } = 4;
-
+        
         public Llama(string name, int age, bool isWearingHat) : base(name, age)
         {
-            Name = name;
-            Age = age;
+            Species = "lama";
+            NumOfLegs = 4;
+            IsTame = true;
+            Habitat = "i en hage";
+            NumOfNipples = 4;
             IsWearingHat = isWearingHat;
         }
 

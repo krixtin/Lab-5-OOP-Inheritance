@@ -9,20 +9,33 @@ namespace Lab_5_OOP_Inheritance.Classes.Animals.Mammals
     internal class Cat : Mammal
     {
         public bool IsLongHaired { get; set; }
-        public string Species { get; set; } = "katt";
-        public int NumOfLegs { get; set; } = 4;
-        public bool IsTame { get; set; } = true;
-        public string Habitat { get; set; } = "i ett hus";
-        public int NumOfNipples { get; set; } = 8;
         
 
         public Cat(string name, int age, bool isLongHaired) : base(name, age)
         {
-            Name = name;
-            Age = age;
+            Species = "katt";
+            NumOfLegs = 4;
+            IsTame = true;
+            Habitat = "i ett hus";
+            NumOfNipples = 8;
             IsLongHaired = isLongHaired;
         }
 
+        public override void Introduce()
+        {
+            if (IsLongHaired)
+            {
+                Console.WriteLine($"{Name} är en långhårig katt som är {Age} år gammal. {Name} har {NumOfLegs} ben och bor {Habitat}.");
+            }
+            else
+            {
+                Console.WriteLine($"{Name} är en korthårig katt som är {Age} år gammal. {Name} har {NumOfLegs} ben och bor {Habitat}.");
+            }
+            if (IsTame == false)
+            {
+                Console.WriteLine($"{Name} är inte tam. Var försiktig!");
+            }
+        }
 
         public override void MakeSound()
         {
