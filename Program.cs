@@ -10,17 +10,17 @@ namespace Lab_5_OOP_Inheritance
         static void Main(string[] args)
         {
 
-            Cat kattenAlba = new("Alba", 8, false);
+            Cat catAlba = new("Alba", 8, false);
             Snake newSnake = new("Ormis", 8, 40);
-            Cat kattenLaima = new("Laima", 9, true);
+            Cat catLaima = new("Laima", 9, true);
             Constrictor newConstrictorSnake = new("Kaa", 12, 147);
             Llama newLlama = new("Putte", 5, true);
-            Human jag = new("Kristin", 36, 158);
+            Human me = new("Kristin", 36, 158);
             Turtle newTurtle = new("Skalman", 53, "stor");
             Turtle littleTurtle = new("Melvin", 6, "liten");
 
 
-            List<Animal> animals = new() { kattenAlba, newSnake, kattenLaima, newConstrictorSnake, newLlama, jag, newTurtle, littleTurtle };
+            List<Animal> animals = new() { catAlba, newSnake, catLaima, newConstrictorSnake, newLlama, me, newTurtle, littleTurtle };
 
             foreach (Animal animal in animals)
             {
